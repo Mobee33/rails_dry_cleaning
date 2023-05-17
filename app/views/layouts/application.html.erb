@@ -8,9 +8,54 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+      <!-- FontAwesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <!-- Scrollbar Settings -->
+    <style>
+      html::-webkit-scrollbar{
+        width: 0.70vw;
+      }
+
+      html::-webkit-scrollbar-thumb{
+        background: rgb(37, 37, 37);
+        border-radius: 4px;
+      }
+    </style>
   </head>
 
   <body>
     <%= yield %>
+
+    <!-- AOS JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+      });
+    </script>
+
+    <script>
+      // ========== Navbar Function
+      window.addEventListener("scroll", function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+      // ========== Toggle Menu
+      function toggleMenu(){
+        const menuBar = document.querySelector(".menuToggle");
+        const nav = document.querySelector(".nav");
+        menuBar.classList.toggle('active');
+        nav.classList.toggle('active');
+      }
+    </script>
   </body>
 </html>

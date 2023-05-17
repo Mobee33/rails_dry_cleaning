@@ -1,2 +1,474 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+    <!-- Navigation bar start -->
+      <header>
+        <a href="#home" class="logo">Flamstead</a>
+        <div class="menuToggle-rails" onclick="toggleMenu();"></div>
+        <ul class="nav-rails">
+          <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu();">About</a></li>
+          <li><a href="#system" onclick="toggleMenu();">System</a></li>
+          <li><a href="#service" onclick="toggleMenu();">Services</a></li>
+          <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+          <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+      </header>
+    <!-- Navigation bar end -->
+
+    <!-- Landing Page start -->
+    <section class="home" id="home">
+      <div class="content">
+        <h2 data-aos="fade-up">Flamstead Dry Cleaning</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+          Expert Care for Your Precious Garments<br>
+          Refreshing Quality, Every Time
+        </p>
+        <a href="#service" class="btn-1-rails" data-aos="fade-up" data-aos-delay="200">Book Now</a>
+      </div>
+
+    </section>
+    <!-- Landing Page end -->
+
+    <!-- About Section start -->
+
+    <section class="about" id="about">
+      <div class="container-rails">
+
+        <!-- About item start -->
+        <div class="row-rails">
+          <div class="col50" data-aos="fade-right">
+            <div class="titleText">
+              <span>A</span>bout Us
+            </div>
+            <p>Experience Excellence in Garment Care and Exceptional Service. At Flamstead Dry Cleaning, we are dedicated to providing meticulous attention to your precious garments. Located in the heart of Hertford, United Kingdom, our professional team is committed to delivering outstanding results that surpass your expectations.</p>
+          </div>
+          <div class="col50">
+            <div class="imgBx" data-aos="fade-left">
+              <%= image_tag asset_path('about8.jpeg'), alt: "" %>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-rails">
+          <div class="col50" data-aos="fade-left">
+            <p>Trust us with your most cherished garments. Our experienced staff is trained to handle a wide range of fabrics and delicate materials, offering specialized care for each item. With meticulous attention to detail, we employ advanced techniques and eco-friendly solutions to remove stains, restore freshness, and prolong the life of your clothes. We pride ourselves on our commitment to exceptional service, ensuring your satisfaction every time you choose Flamstead Dry Cleaning.</p>
+          </div>
+          <div class="col50" data-aos="fade-right">
+            <div class="imgBx">
+              <%= image_tag asset_path('about5.jpeg'), alt: "" %>
+            </div>
+          </div>
+        </div>
+
+    <div class="row-rails">
+          <div class="col50" data-aos="fade-right">
+            <p>Your convenience is our priority. With our convenient location on 36 St Andrew St, you can easily drop off your garments for cleaning and pick them up at your convenience. We understand the value of your time, which is why we offer prompt and reliable service, ensuring your clothes are ready when you need them. Experience the difference of Flamstead Dry Cleaning and entrust us with your clothing care needs.</p>
+          </div>
+          <div class="col50">
+            <div class="imgBx" data-aos="fade-left">
+              <%= image_tag asset_path('about4.jpeg'), alt: "" %>
+            </div>
+          </div>
+        </div>
+
+        <!-- About item end -->
+      </div>
+    </section>
+
+    <!-- About Section end -->
+
+    <!-- System Section start -->
+    <section class="system" id="system">
+
+      <div class="container-rails">
+
+        <div class="title" data-aos="fade-up">
+          <h2 class="titleText">Our <span>P</span>rocess</h2>
+          <p>Discover Our Meticulous Garment Care Journey</p>
+        </div>
+
+        <div class="row-rails">
+          <div class="timeline">
+            <div class="row-rails">
+
+              <!-- Timeline item start -->
+
+              <div class="timeline-item">
+                <div class="timeline-item-inner" data-aos="fade-right">
+                  <i class="icon"></i>
+                  <span>Inspection and Sorting</span>
+                  <h4>Efficient Arrangement</h4>
+                  <p>Our experienced team ensures meticulous preparation, handling garments with care and precision. From thorough inspection to proper tagging and documentation, we ensure everything is in order for an exceptional cleaning process.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-item-inner">
+                  <i class="icon"></i>
+                  <span>Washing Stage</span>
+                  <h4>Fabric Refreshment</h4>
+                  <p>Our dedicated laundry attendants employ advanced techniques and specialized detergents to restore freshness to your garments.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-item-inner">
+                  <i class="icon"></i>
+                  <span>Drying Stage</span>
+                  <h4>Precision Drying</h4>
+                  <p>Our skilled drying clerks carefully control the drying process to maintain the integrity of your garments.</p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-item-inner">
+                  <i class="icon"></i>
+                  <span>Ironing Stage</span>
+                  <h4>Flawless Ironing</h4>
+                  <p>Our meticulous ironing officers use specialized techniques to achieve wrinkle-free perfection in your clothes. </p>
+                </div>
+              </div>
+
+              <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-item-inner">
+                  <i class="icon"></i>
+                  <span>Packaging Stage</span>
+                  <h4>Impeccable Packaging</h4>
+                  <p>Our dedicated packing officers ensure your garments are expertly packaged, ready to be returned to you in pristine condition. </p>
+                </div>
+              </div>
+
+              <!-- Timeline item end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Section end -->
+
+    <!-- Service section start -->
+
+    <section class="service" id="service">
+
+      <div class="container-rails">
+
+        <div class="title" data-aos="fade-up">
+          <h2 class="titleText">Our <span>S</span>ervices</h2>
+          <p>Experience Garment Care Like Never Before.</p>
+        </div>
+
+        <div class="menu">
+
+          <!-- Service menu start-->
+
+          <!-- Service menu item start -->
+
+          <div class="row-rails" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-rails">
+              <div class="boxcard">
+                <div class="imgBx">
+                  <%= image_tag asset_path('service4.avif'), alt: "" %>
+                </div>
+                <div class="text-rails">
+                  <h3>Clothes</h3>
+                  <label for="check" class="next">
+                    <a id="order">Order <i class="fa-solid fa-arrow-right"></i></a>
+                  </label>
+                </div>
+                <!-- <input type="checkbox" id="check"> -->
+
+                <!-- Form service start -->
+
+                <!-- <div class="contentBx">
+                  <div class="content">
+                    <h2>Details</h2>
+                    <div class="col10">
+                      <h1>Customer : </h1><input type="text" placeholder="Name">
+                      <h1>Weight : </h1><input type="text" placeholder="Weight">
+                    </div>
+
+                    <div class="col50">
+                      <div class="select">
+                        <select name="estimation" id="estimation">
+                          <option selected disabled>Estimation</option>
+                          <option value="fast">3 Hours</option>
+                          <option value="super">12 Hours</option>
+                          <option value="rare">1 Day</option>
+                          <option value="common">2 Days</option>
+                          <option value="broke">1 Month</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col100">
+                      <div class="select">
+                        <select name="service" id="service-item">
+                          <option selected disabled>Service</option>
+                          <option value="laundry">Laundry</option>
+                          <option value="ironing">Ironing</option>
+                          <option value="doubleService">Laundry & Ironing</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="end">
+                      <label for="check">
+                        <a class="back" id="back"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                      </label>
+                      <label for="confirm">
+                        <button class="confirm" id="confirm">Confirm <i class="fa-solid fa-arrow-right"></i></button>
+                      </label>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Form service end -->
+              </div>
+            </div>
+          </div>
+          <!-- Service menu item end -->
+
+          <!-- Service menu item start -->
+
+          <div class="row-rails" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-rails">
+              <div class="boxcard">
+                <div class="imgBx">
+                  <%= image_tag asset_path('service5.webp'), alt: "" %>
+                </div>
+                <div class="text-rails">
+                  <h3>Blanket</h3>
+                  <label for="check2" class="next">
+                    <a id="order">Order <i class="fa-solid fa-arrow-right"></i></a>
+                  </label>
+                </div>
+                <!-- <input type="checkbox" id="check2"> -->
+
+                <!-- Form service start -->
+
+                <!-- <div class="contentBx">
+                  <div class="content">
+                    <h2>Details</h2>
+                    <div class="col10">
+                      <h1>Customer : </h1><input type="text" placeholder="Name">
+                      <h1>Pcs : </h1><input type="text" placeholder="Pcs">
+                    </div>
+
+                    <div class="col50">
+                      <div class="select">
+                        <select name="estimation" id="estimation">
+                          <option selected disabled>Estimation</option>
+                          <option value="fast">3 Hours</option>
+                          <option value="super">12 Hours</option>
+                          <option value="rare">1 Day</option>
+                          <option value="common">2 Days</option>
+                          <option value="broke">1 Month</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col100">
+                      <div class="select">
+                        <select name="service" id="service-item">
+                          <option selected disabled>Service</option>
+                          <option value="laundry">Laundry</option>
+                          <option value="ironing">Ironing</option>
+                          <option value="doubleService">Laundry & Ironing</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="end">
+                      <label for="check2">
+                        <a class="back" id="back"><i class="fa-solid fa-arrow-rails-left"></i> Back</a>
+                      </label>
+                      <label for="confirm2">
+                        <button class="confirm" id="confirm">Confirm <i class="fa-solid fa-arrow-rails-right"></i></button>
+                      </label>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Form service end -->
+              </div>
+            </div>
+          </div>
+          <!-- Service menu item end -->
+
+          <!-- Service menu item start -->
+
+          <div class="row-rails" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-rails">
+              <div class="boxcard">
+                <div class="imgBx">
+                  <%= image_tag asset_path('service6.jpeg'), alt: "" %>
+                </div>
+                <div class="text-rails">
+                  <h3>Shoes</h3>
+                  <label for="check3" class="next">
+                    <a id="order">Order <i class="fa-solid fa-arrow-right"></i></a>
+                  </label>
+                </div>
+                <!-- <input type="checkbox" id="check3"> -->
+
+                <!-- Form service start -->
+
+                <!-- <div class="contentBx">
+                  <div class="content">
+                    <h2>Details</h2>
+                    <div class="col10">
+                      <h1>Customer : </h1><input type="text" placeholder="Name">
+                      <h1>Pcs : </h1><input type="text" placeholder="Pcs">
+                    </div>
+
+                    <div class="col50">
+                      <div class="select">
+                        <select name="estimation" id="estimation">
+                          <option selected disabled>Estimation</option>
+                          <option value="fast">3 Hours</option>
+                          <option value="super">12 Hours</option>
+                          <option value="rare">1 Day</option>
+                          <option value="common">2 Days</option>
+                          <option value="broke">1 Month</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col100">
+                      <div class="select">
+                        <select name="service" id="service-item">
+                          <option selected disabled>Service</option>
+                          <option value="laundry">Laundry</option>
+                          <option value="ironing">Ironing</option>
+                          <option value="doubleService">Laundry & Ironing</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="end">
+                      <label for="check3">
+                        <a class="back" id="back"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                      </label>
+                      <label for="confirm3">
+                        <button class="confirm" id="confirm">Confirm <i class="fa-solid fa-arrow-right"></i></button>
+                      </label>
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Form service end -->
+              </div>
+            </div>
+          </div>
+          <!-- Service menu item end -->
+
+          <!-- Service menu end-->
+
+        </div>
+      </div>
+    </section>
+    <!-- Service section end -->
+
+    <!-- Testimonials Secion start  -->
+
+      <section class="testimonials" id="testimonials">
+
+        <div class="title" data-aos="fade-up">
+          <h2 class="titleText">Hear from Our <span>C</span>ustomers</h2>
+          <p>Discover What They Say About Us.</p>
+        </div>
+
+        <div class="content">
+          <!-- Testi item start -->
+            <div class="box" data-aos="fade-up" data-aos-delay="100">
+              <div class="imgBx">
+                <%= image_tag asset_path('testi1.jpg'), alt: "" %>
+              </div>
+              <div class="text-rails">
+                <p>"I am very impressed with the exceptional service and attention. Highly recommended!"</p>
+                <h3>Jane Smith</h3>
+              </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="200">
+              <div class="imgBx">
+                <%= image_tag asset_path('testi2.jpg'), alt: "" %>
+              </div>
+              <div class="text-rails">
+                <p> "They handle each garment with care and precision. I trust them completely with my clothing care needs!"</p>
+                <h3>Michael Johnson</h3>
+              </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+              <div class="imgBx">
+                <%= image_tag asset_path('testi3.jpg'), alt: "" %>
+              </div>
+              <div class="text-rails">
+                <p>"The quality of their cleaning is unmatched. They have successfully removed stains from my delicate fabrics."</p>
+                <h3>Suzie Wang</h3>
+              </div>
+            </div>
+          <!-- Testi item start -->
+        </div>
+      </section>
+    <!-- Testimonials Secion end  -->
+
+    <!-- Contact Section start -->
+    <section class="contact" id="contact">
+      <div class="container-rails">
+
+        <div class="title" data-aos="fade-up">
+          <h2 class="titleText">contact <span>U</span>s</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="box">
+
+          <div class="contactForm" data-aos="fade-right">
+
+            <h3>Send Message</h3>
+            <div class="inputBox" data-aos="fade-right" data-aos-delay="20">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox" data-aos="fade-right" data-aos-delay="40">
+              <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox" data-aos="fade-right" data-aos-delay="60">
+              <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="inputBox" data-aos="fade-right" data-aos-delay="80">
+              <input type="submit" class="btn" value="Send">
+            </div>
+          </div>
+
+          <div class="map" data-aos="fade-left">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2467.525390255326!2d-0.08503342306140764!3d51.79655998953776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487627b12912f265%3A0x91af55fd5800c272!2sFlamsteads%20Dry%20Cleaning!5e0!3m2!1sen!2smu!4v1684060044165!5m2!1sen!2smu" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="icon-container" data-aos="fade-up">
+
+            <div class="icons">
+              <span>address :</span>
+              <p>36 St Andrew St, Hertford SG14 1JA, United Kingdom</p>
+            </div>
+            <div class="icons">
+              <span>email :</span>
+              <p>noreply@mail.com</p>
+            </div>
+            <div class="icons">
+              <span>phone :</span>
+              <p>+44 7911 123456</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!--Copyright  -->
+    <div class="cp">
+      <p>&copy; 2023 <a href="#">Flamstead</a>. All Rights Reserved</p>
+    </div>
