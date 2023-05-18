@@ -1,0 +1,158 @@
+.page-wrapper {
+  background: #f4f5f5;
+  overflow: hidden;
+}
+
+.full-blog-dark {
+  background-color: #101010;
+}
+
+.bg-img-fix {
+  background-size: contain;
+  padding: 20px;
+}
+
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+
+  &.style-2 .form-control {
+    background: #fff;
+    border-left: 2px solid #707070;
+  }
+}
+
+.link-signup-password {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login-height {
+  height: 100vh;
+}
+
+.bg-white-login {
+  background-color: #fff !important;
+}
+
+.logo-header img {
+  max-width: 70px;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.form-title {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.dez-separator-outer {
+  overflow: hidden;
+}
+
+.dez-separator.style-liner {
+  width: 20px;
+}
+
+.dez-separator[class*="style-"]:before {
+  left: auto;
+  right: 30px;
+}
+
+.dez-separator[class*="style-"]:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  width: 70px;
+  height: 1px;
+  background: #cecece;
+  transform: translateY(-50%);
+}
+
+.dez-form .form-group {
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.login-form.style-2 .form-control {
+  background: #fff;
+  border-left: 2px solid #707070;
+}
+
+.dez-form .form-control {
+  background: #dde3ec;
+  height: 44px;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+#form {
+  float: right;
+}
+
+.site-button {
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 767px) {
+  .bg-img-fix {
+    background-image: none!important;
+  }
+
+  .col-lg-8.p-0 {
+    display: none;
+  }
+
+  .col-lg-4.bg-white-login {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .login-form {
+    max-width: 100%;
+  }
+
+  .bg-img-fix{
+    background-image: none!important;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-img-fix {
+    height: 100vh;
+    padding: 0;
+  }
+
+  #form {
+    float: right;
+  }
+
+  .login-height {
+    height: 100vh;
+  }
+}

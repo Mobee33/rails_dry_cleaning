@@ -80,7 +80,7 @@ img{
 a {
   text-decoration: none;
   &:hover{
-    color: $bg-white-10;
+
   }
 }
 // ========== Button Style
@@ -95,6 +95,21 @@ a {
   letter-spacing: 2px;
   transition: .5s;
   border-radius: 5px;
+}
+
+.btn-login {
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: $text-black-700;
+  font-size: 1.06rem;
+  border-radius: 4px;
+  color: $text-black-300;
+  font-weight: 600;
+
+  &:hover{
+    background-color: $text-black-650;
+    color: $text-black-300;
+  }
 }
 // ========== Navigation Bar
 header{
@@ -177,6 +192,12 @@ header{
       font-size: 1em;
       font-weight: 500;
       color: $text-black-300;
+    }
+
+    a{
+      &:hover{
+        color: $bg-white-10!important;
+      }
     }
   }
 }
