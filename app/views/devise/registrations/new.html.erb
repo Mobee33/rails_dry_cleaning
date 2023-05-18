@@ -1,22 +1,37 @@
-<h2>Sign up</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" } %>
-    <%= f.input :password, required: true, hint: (@minimum_password_length ? "#{@minimum_password_length} characters minimum" : nil), input_html: { autocomplete: "new-password" } %>
-    <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" } %>
-
-    <%= f.input :phone_num, label: "Phone Number" %>
-    <%= f.input :address, label: "Address" %>
-    <%= f.input :first_name, label: "First Name" %>
-    <%= f.input :last_name, label: "Last Name" %>
+<div class="page-wrapper">
+  <div class="blog-page-content full-blog-dark style-1">
+    <div class="bg-img-fix" style="background-image: url('<%= asset_path('signup.jpg') %>');">
+      <div class="row">
+        <div class="col-lg-8 p-0 d-none d-lg-block"></div>
+        <div id="form" class="col-lg-4 bg-white-login z-index2 relative d-flex align-items-center signup-height">
+          <div class="signup-form style-2">
+            <div class="signup-logo logo-header">
+              <%= image_tag("logo.jpg") %>
+            </div>
+            <h3 class="form-title">Sign Up</h3>
+            <div class="dez-separator-outer">
+              <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <%= f.error_notification %>
+                <div class="form-inputs">
+                  <%= f.input :email, required: true, autofocus: true, input_html: { autocomplete: "email" } %>
+                  <%= f.input :password, required: true, hint: (@minimum_password_length ? "#{@minimum_password_length} characters minimum" : nil), input_html: { autocomplete: "new-password" } %>
+                  <%= f.input :password_confirmation, required: true, input_html: { autocomplete: "new-password" } %>
+                  <%= f.input :phone_num, label: "Phone Number" %>
+                  <%= f.input :address, label: "Address" %>
+                  <%= f.input :first_name, label: "First Name" %>
+                  <%= f.input :last_name, label: "Last Name" %>
+                </div>
+                <div class="form-actions">
+                  <%= f.button :submit, "Sign up" %>
+                </div>
+              <% end %>
+              <div class="form-actions link-login">
+                <%= render "devise/shared/links" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
