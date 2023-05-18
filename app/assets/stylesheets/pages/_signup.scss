@@ -1,0 +1,60 @@
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+
+  &.style-2 .form-control {
+    background: #fff;
+    border-left: 2px solid #707070;
+  }
+}
+
+.link-login {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.signup-height {
+  height: 100vh;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 767px) {
+  .bg-img-fix {
+    background-image: none !important;
+  }
+
+  .col-lg-8.p-0 {
+    display: none;
+  }
+
+  .col-lg-4.bg-white-login {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .signup-form {
+    max-width: 100%;
+  }
+
+  .bg-img-fix {
+    background-image: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .bg-img-fix {
+    height: 100vh;
+    padding: 0;
+  }
+
+  #form {
+    float: right;
+  }
+
+  .signup-height {
+    height: 100vh;
+  }
+}
