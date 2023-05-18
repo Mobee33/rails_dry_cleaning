@@ -242,7 +242,9 @@
                 <div class="text-rails">
                   <h3>Blanket</h3>
                   <label for="check2" class="next">
-                    <a id="order">Book <i class="fa-solid fa-arrow-right"></i></a>
+                    <%= link_to new_clothe_path, id: "order" do %>
+                      <i class="fa-solid fa-arrow-right"></i> Book
+                    <% end %>
                   </label>
                 </div>
                 <!-- <input type="checkbox" id="check2"> -->
@@ -309,7 +311,7 @@
                 <div class="text-rails">
                   <h3>Shoes</h3>
                   <label for="check3" class="next">
-                    <a id="order">Book <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://sneaker-clean.herokuapp.com/" id="order">Book <i class="fa-solid fa-arrow-right"></i></a>
                   </label>
                 </div>
                 <!-- <input type="checkbox" id="check3"> -->
