@@ -1,0 +1,9 @@
+<%= simple_form_for @booking, url: blankets_path do |f| %>
+  <h2>Select Service</h2>
+  <!-- Form fields for service selection -->
+  <%= f.input :item_type, collection: ["Cotton Blanket", "Wool Blanket", "Fleece Blanket"], include_blank: true, label: "Item Type" %>
+
+  <%= f.input :quantity %>
+
+  <%= f.button :submit, "Continue" %>
+<% end %>
