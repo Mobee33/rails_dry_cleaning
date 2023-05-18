@@ -1,0 +1,2 @@
+class BlanketsController < ApplicationController
+end
