@@ -10,6 +10,7 @@
             </div>
             <h3 class="form-title">Sign Up</h3>
             <div class="dez-separator-outer">
+              <p>Enter your information below to create an account.</p>
               <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
                 <%= f.error_notification %>
                 <div class="form-inputs">
@@ -21,13 +22,11 @@
                   <%= f.input :first_name, label: "First Name" %>
                   <%= f.input :last_name, label: "Last Name" %>
                 </div>
-                <div class="form-actions">
-                  <%= f.button :submit, "Sign up" %>
+                <div class="form-actions d-flex justify-content-between">
+                  <%= f.button :submit, "Sign up", class: "mr-2 btn-1-rails" %>
+                  <%# <%= render "devise/shared/links" %>
                 </div>
               <% end %>
-              <div class="form-actions link-login">
-                <%= render "devise/shared/links" %>
-              </div>
             </div>
           </div>
         </div>
