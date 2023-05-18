@@ -2,12 +2,12 @@ class BlanketsController < ApplicationController
   def new
     if user_signed_in?
       @booking = current_user.bookings.build
-      render partial: 'clothes/booking_form'
+      render partial: 'blankets/booking_form'
     else
       if params[:booking].present?
         session[:booking_params] = booking_params
       end
-      redirect_to new_user_registration_path
+      redirect_to new_user_session_path
     end
   end
 
@@ -15,7 +15,7 @@ class BlanketsController < ApplicationController
     if user_signed_in?
       @booking = current_user.bookings.build(booking_params)
     else
-      redirect_to new_user_registration_path and return unless session[:booking].present?
+      redirect_to new_user_session_path and return unless session[:booking].present?
 
       @user = User.new(user_params)
       if @user.save
