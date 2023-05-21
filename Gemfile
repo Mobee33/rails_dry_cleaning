@@ -27,6 +27,10 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+#bootstrap
+gem 'bootstrap', '~> 4.6.0' # Adjust the version according to your needs
+
+
 #devise
 gem "devise"
 
