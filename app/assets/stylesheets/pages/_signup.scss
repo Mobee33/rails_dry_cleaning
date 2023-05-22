@@ -72,15 +72,14 @@
   }
 }
 
-// @media (min-width: 992px) and (max-width: 991px) {
-//   /* Disable custom scrollbar styles for sign-up page on screens wider than 991px */
-//   html::-webkit-scrollbar {
-//     width: initial;
-//     overflow-y: hidden;
-//   }
+@media (min-width: 992px) and (max-width: 991px) {
+  /* Disable custom scrollbar styles for sign-up page on screens wider than 991px */
+  html::-webkit-scrollbar {
+    width: initial;
+  }
 
-//   html::-webkit-scrollbar-thumb {
-//     background: initial;
-//     border-radius: initial;
-//   }
-// }
+  html::-webkit-scrollbar-thumb {
+    background: initial;
+    border-radius: initial;
+  }
+}
