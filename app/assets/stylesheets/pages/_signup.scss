@@ -1,11 +1,10 @@
 #form {
-  margin-left: auto; /* Align the form to the right */
-  width: 100%;
+  margin: 0 auto; /* Center align the form */
+  width: 100%; /* Occupy full width */
   max-width: 400px;
   height: 100vh;
-  overflow-y: auto; // Add this line to enable vertical scrolling
+  overflow-y: auto; /* Enable vertical scrolling */
 }
-
 
 .signup-form {
   max-width: 400px;
@@ -33,9 +32,6 @@
 /* Responsive Styles */
 
 @media (max-width: 767px) {
-  .bg-img-fix {
-    background-image: none !important;
-  }
 
   .col-lg-8.p-0 {
     display: none;
@@ -44,15 +40,15 @@
   .col-lg-4.bg-white-login {
     width: 100%;
   }
+
+  #form {
+    margin: 0; /* Reset margin to remove horizontal spacing */
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .signup-form {
     max-width: 100%;
-  }
-
-  .bg-img-fix {
-    background-image: none !important;
   }
 }
 
