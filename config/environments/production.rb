@@ -44,7 +44,6 @@ Rails.application.configure do
   config.assets.compile = true
   config.assets.digest = true
 
-  config.serve_static_assets = true
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
