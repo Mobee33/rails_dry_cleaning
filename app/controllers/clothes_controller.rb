@@ -15,7 +15,7 @@ class ClothesController < ApplicationController
     if user_signed_in?
       @booking = current_user.bookings.build(booking_params)
     else
-      redirect_to new_user_session_path and return unless session[:booking].present?
+      redirect_to new_user_session_path and return unless session[:booking_params].present?
 
       @user = User.new(user_params)
       if @user.save
