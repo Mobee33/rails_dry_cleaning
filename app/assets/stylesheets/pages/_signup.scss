@@ -1,3 +1,12 @@
+#form {
+  margin-left: auto; /* Align the form to the right */
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  overflow-y: auto; // Add this line to enable vertical scrolling
+}
+
+
 .signup-form {
   max-width: 400px;
   margin: 0 auto;
