@@ -1,9 +1,10 @@
 <%= simple_form_for @booking, url: clothes_path do |f| %>
-  <h2>Select Service</h2>
-  <!-- Form fields for service selection -->
-  <%= f.input :item_type, collection: ["Pants", "Shirts", "Dresses"], include_blank: true, label: "Item Type" %>
-
-  <%= f.input :quantity %>
-
-  <%= f.button :submit, "Continue" %>
+  <h2 class="yoyo">Select Service</h2>
+  <div class="services-grid">
+    <%= render partial: 'service_card', locals: { icon: 'fas fa-tshirt', label: 'T-Shirts', field_name: :tshirt_quantity, f: f } %>
+    <%= render partial: 'service_card', locals: { icon: 'fas fa-tshirt', label: 'Shirts', field_name: :shirt_quantity, f: f } %>
+    <%= render partial: 'service_card', locals: { icon: 'fas fa-vest', label: 'Vests', field_name: :vest_quantity, f: f } %>
+    <%= render partial: 'service_card', locals: { icon: 'fas fa-pants', label: 'Pants', field_name: :pants_quantity, f: f } %>
+  </div>
+  <%= f.button :submit, "Continue", class: 'service-card-submit' %>
 <% end %>
