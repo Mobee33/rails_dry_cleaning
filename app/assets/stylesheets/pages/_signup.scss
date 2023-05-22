@@ -15,7 +15,10 @@
 }
 
 .signup-height {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the content horizontally */
 }
 
 /* Responsive Styles */
@@ -46,15 +49,38 @@
 
 @media (min-width: 992px) {
   .bg-img-fix {
-    height: 100vh;
     padding: 0;
   }
 
   #form {
-    float: right;
+    margin-left: auto; /* Align the form to the right */
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    overflow-y: auto;
   }
 
   .signup-height {
-    height: 100vh;
+    min-height: unset;
+    justify-content: flex-start; /* Align the content to the top */
+  }
+
+  .form-actions {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 991px) {
+  /* Disable custom scrollbar styles for sign-up page on screens wider than 991px */
+  html::-webkit-scrollbar {
+    width: initial;
+    overflow-y: hidden;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: initial;
+    border-radius: initial;
   }
 }
