@@ -3,7 +3,7 @@
     <div class="bg-img-fix" style="background-image: url('<%= asset_path('signup.jpg') %>');">
       <div class="row">
         <div class="col-lg-8 p-0 d-none d-lg-block"></div>
-        <div id="form" class="col-lg-4 bg-white-login z-index2 relative d-flex align-items-center signup-height">
+        <div id="form" class="col-lg-4 bg-white-login z-index2 relative signup-height">
           <div class="signup-form style-2">
             <div class="signup-logo logo-header">
               <%= image_tag("logo.jpg") %>
@@ -22,7 +22,7 @@
                   <%= f.input :first_name, label: "First Name" %>
                   <%= f.input :last_name, label: "Last Name" %>
                 </div>
-                <div class="form-actions d-flex justify-content-between">
+                <div class="form-actions d-flex justify-content-center"> <!-- Center align the form actions -->
                   <%= f.button :submit, "Sign up", class: "mr-2 btn-1-rails" %>
                   <%# <%= render "devise/shared/links" %>
                 </div>
